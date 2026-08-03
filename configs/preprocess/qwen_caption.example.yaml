@@ -1,0 +1,7 @@
+model: Qwen/Qwen3-VL-8B-Instruct
+max_new_tokens: 256
+temperature: 0.1
+prompt: >-
+  Describe the visible avatar reference image for a talking-avatar video prompt.
+  Focus on appearance, framing, clothing, art style, expression, and background.
+  Do not infer identity. Use one concise paragraph.

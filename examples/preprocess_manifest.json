@@ -1,0 +1,9 @@
+{
+  "items": [
+    {
+      "id": "example",
+      "image": "reference.png",
+      "audio": "audio.wav"
+    }
+  ]
+}

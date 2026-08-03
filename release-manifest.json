@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "model": {
+    "name": "TalkingAvatar",
+    "release_format": "talking-avatar-v1",
+    "license": "Apache-2.0"
+  },
+  "runtime_dependencies": [
+    {
+      "id": "Wan-AI/Wan2.2-TI2V-5B",
+      "role": "video model and text encoder"
+    },
+    {
+      "id": "facebook/wav2vec2-base-960h",
+      "role": "audio encoder"
+    }
+  ],
+  "files": [
+    {
+      "path": "checkpoint/model-00001-of-00003.safetensors",
+      "size": 5347532928,
+      "sha256": "5c31a453c7c44ca477eb5a81fe7deb40f60500025d9116351de4c5e4f37c6ba4"
+    },
+    {
+      "path": "checkpoint/model-00002-of-00003.safetensors",
+      "size": 5338070376,
+      "sha256": "63d5951c89c0799f29b5ac1d387346b74eb4b7cc253be20ba706b5f577d98f20"
+    },
+    {
+      "path": "checkpoint/model-00003-of-00003.safetensors",
+      "size": 3856368736,
+      "sha256": "fcb8227cb0e0c4a2e8ee5e5dde7ccd53afc946371da44afd8f712fac7635d46a"
+    },
+    {
+      "path": "checkpoint/model.safetensors.index.json",
+      "size": 100324,
+      "sha256": "ef40d044bd96aa28517492b757e8e5cb9f36810de6ba24a1af7933c52df1108d"
+    },
+    {
+      "path": "negative_prompt.safetensors",
+      "size": 4194392,
+      "sha256": "67fc743c64772099751d94b16d538bb5be5530da47583dd5b0579a1650e2e8ff"
+    }
+  ]
+}

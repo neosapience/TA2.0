@@ -1,0 +1,11 @@
+TalkingAvatar Inference
+Copyright 2026 Neosapience, Inc.
+
+This product includes software adapted from Wan2.2:
+  https://github.com/Wan-Video/Wan2.2
+Copyright 2024-2025 The Alibaba Wan Team Authors.
+Licensed under the Apache License, Version 2.0.
+
+Modified Wan files are located under talking_avatar/vendor/wan. Changes include
+the TalkingAvatar audio cross-attention path, autoregressive overlap generation, and the
+removal of distributed and training-only integration points for this release.

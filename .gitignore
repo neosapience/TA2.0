@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+artifacts/
+outputs/
+*.mp4
+*.ckpt
+*.pt
+*.safetensors

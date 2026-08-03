@@ -1,0 +1,9 @@
+{
+  "audio_model_name_or_path": "facebook/wav2vec2-base-960h",
+  "video_model_name_or_path": "Wan-AI/Wan2.2-TI2V-5B",
+  "inference_entrypoint": "inference.py",
+  "library_name": "talking-avatar",
+  "model_type": "talking_avatar",
+  "negative_prompt_file": "negative_prompt.safetensors",
+  "release_checkpoint_subdir": "checkpoint"
+}
