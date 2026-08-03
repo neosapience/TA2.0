@@ -3,11 +3,34 @@ import shutil
 import subprocess
 
 import imageio.v2 as imageio
+import imageio_ffmpeg
 import numpy as np
 import pytest
 import soundfile
 
+import talking_avatar.output as output_module
 from talking_avatar.output import mux_audio
+
+
+def test_mux_uses_packaged_ffmpeg(monkeypatch, tmp_path):
+    commands = []
+    monkeypatch.setattr(output_module, "audio_duration_seconds", lambda _: 1.0)
+    monkeypatch.setattr(
+        output_module.subprocess,
+        "run",
+        lambda command, *, check: commands.append((command, check)),
+    )
+
+    mux_audio(
+        tmp_path / "video.mp4",
+        tmp_path / "audio.wav",
+        tmp_path / "output.mp4",
+        frames=25,
+        fps=25,
+    )
+
+    assert commands[0][0][0] == imageio_ffmpeg.get_ffmpeg_exe()
+    assert commands[0][1] is True
 
 
 @pytest.mark.skipif(shutil.which("ffprobe") is None, reason="ffprobe is required")

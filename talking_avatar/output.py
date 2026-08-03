@@ -3,6 +3,8 @@ from __future__ import annotations
 import subprocess
 from pathlib import Path
 
+from imageio_ffmpeg import get_ffmpeg_exe
+
 from .preprocessing import audio_duration_seconds
 
 
@@ -27,7 +29,7 @@ def mux_audio(
     output_path.parent.mkdir(parents=True, exist_ok=True)
     subprocess.run(
         [
-            "ffmpeg",
+            get_ffmpeg_exe(),
             "-y",
             "-loglevel",
             "error",
