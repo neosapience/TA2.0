@@ -1,8 +1,8 @@
 <div align="center">
 
-# TalkingAvatar
+# TalkingAvatar (TA2.0): Audio-Driven Talking Avatar Generation
 
-### Audio-Driven Talking Avatar Generation by [Neosapience](https://www.neosapience.com/)
+### Reference Image + Speech Audio → Expressive Avatar Video by [Neosapience](https://www.neosapience.com/)
 
 [![Neosapience](https://img.shields.io/badge/Neosapience-Voice%20%26%20Avatar%20AI-6C5CE7)](https://www.neosapience.com/)
 [![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
@@ -16,11 +16,29 @@
 
 </div>
 
+## Demo
+
+<table align="center">
+  <tr>
+    <th>Reference Image</th>
+    <th>Generated Talking Avatar</th>
+  </tr>
+  <tr>
+    <td><img src="examples/reference.png" width="240" alt="TalkingAvatar reference image"></td>
+    <td><img src="assets/talking-avatar-demo.webp" width="240" alt="Audio-driven TalkingAvatar generation demo"></td>
+  </tr>
+</table>
+
+<p align="center">
+  <sub>Generated from the bundled reference image and speech audio. The animated
+  preview omits audio; inference writes an MP4 with the original speech.</sub>
+</p>
+
 ## Overview
 
-**TalkingAvatar (TA2.0)** is Neosapience's audio-driven talking avatar model.
-It creates an expressive avatar video from a reference image, speech audio, and
-an optional text prompt.
+**TalkingAvatar (TA2.0)** is Neosapience's audio-driven talking avatar generation
+model. It creates expressive, lip-synchronized avatar videos from a reference
+image, speech audio, and an optional text prompt.
 
 This repository provides the inference runtime and release configuration for
 TalkingAvatar.

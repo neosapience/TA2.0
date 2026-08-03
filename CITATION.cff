@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use TalkingAvatar in your work, please cite this software."
+title: "TalkingAvatar (TA2.0)"
+type: software
+version: 0.1.0
+date-released: 2026-08-04
+authors:
+  - name: "Neosapience, Inc."
+repository-code: "https://github.com/neosapience/TA2.0"
+url: "https://huggingface.co/neosapience/TA2.0"
+license: Apache-2.0
+keywords:
+  - audio-driven talking avatar generation
