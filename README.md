@@ -25,13 +25,13 @@
   </tr>
   <tr>
     <td><img src="examples/reference.png" width="240" alt="TalkingAvatar reference image"></td>
-    <td><img src="assets/talking-avatar-demo.webp" width="240" alt="Audio-driven TalkingAvatar generation demo"></td>
+    <td><a href="assets/talking-avatar-demo.mp4"><img src="assets/talking-avatar-demo.webp" width="240" alt="Audio-driven TalkingAvatar generation demo"></a></td>
   </tr>
 </table>
 
 <p align="center">
   <sub>Generated from the bundled reference image and speech audio. The animated
-  preview omits audio; inference writes an MP4 with the original speech.</sub>
+  preview omits audio; click it to open the original H.264 MP4 with audio.</sub>
 </p>
 
 ## Overview
