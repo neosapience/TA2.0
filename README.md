@@ -29,11 +29,6 @@
   </tr>
 </table>
 
-<p align="center">
-  <sub>Generated from the bundled reference image and speech audio. The animated
-  preview omits audio; click it to open the original H.264 MP4 with audio.</sub>
-</p>
-
 ## Overview
 
 **TalkingAvatar (TA2.0)** is Neosapience's audio-driven talking avatar generation
