@@ -31,3 +31,7 @@ jobs:
 
       - name: Perform CodeQL analysis
         uses: github/codeql-action/analyze@2892aa5e19bbd11bc0cff5427e3b750a04d9e3c2
+        with:
+          # fork PR 의 GITHUB_TOKEN 은 읽기 전용이라 SARIF 업로드가 403 으로 실패한다
+          # — fork PR 에서만 업로드를 끈다 (분석 자체는 그대로 수행)
+          upload: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository && 'never' || 'always' }}
